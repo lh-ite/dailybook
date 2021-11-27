@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加日记"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="141dp">
+
+        <TextView
+            android:id="@+id/text_writer"
+            android:layout_width="79dp"
+            android:layout_height="44dp"
+            android:text="作者" />
+
+        <EditText
+            android:id="@+id/edit_writer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="107dp"
+            android:layout_toRightOf="@id/text_writer"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="请输入作者的名字" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="79dp"
+            android:layout_height="44dp"
+            android:text="标题" />
+
+        <EditText
+            android:id="@+id/edit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="107dp"
+            android:layout_toRightOf="@id/text_title"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="请输入标题" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="132dp">
+
+        <TextView
+            android:id="@+id/text_content"
+            android:layout_width="79dp"
+            android:layout_height="44dp"
+            android:text="内容" />
+
+        <EditText
+            android:id="@+id/edit_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="107dp"
+            android:layout_toRightOf="@id/text_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="请输入内容" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="133dp">
+
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="79dp"
+            android:layout_height="44dp"
+            android:text="时间" />
+
+        <EditText
+            android:id="@+id/edit_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="107dp"
+            android:layout_toRightOf="@id/text_time"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="请输入时间" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="98dp">
+
+        <TextView
+            android:id="@+id/text_pic"
+            android:layout_width="79dp"
+            android:layout_height="44dp"
+            android:text="图片" />
+
+        <ImageView
+            android:id="@+id/edit_pic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="168dp"
+            android:layout_toRightOf="@id/text_pic"
+            android:hint="请输入时间" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+    <Button
+        android:id="@+id/addto_database"
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:text="添   加"
+        app:backgroundTint="#2196F3" />
+
+        <Button
+            android:id="@+id/addto_pic"
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@id/addto_database"
+            android:text="图片"
+            app:backgroundTint="#2196F3" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/returnback1"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="返  回"
+        app:backgroundTint="#2196F3" />
+
+</LinearLayout>
